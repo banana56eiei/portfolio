@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            /* ใส่รูปภาพพื้นหลังใหม่ และตั้งค่าให้เต็มหน้าจอพอดี */
             background-image: url('imgs/isewtweetbg.jpg');
             background-size: cover;
             background-position: center;
@@ -17,14 +16,26 @@
             text-align: center;
             padding: 50px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 85vh;
             margin: 0;
         }
         
+    
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+        
         .profile-card {
-            /* ปรับพื้นหลังการ์ดเป็นแบบกระจกโปร่งแสง (Glassmorphism) */
+         
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -35,31 +46,10 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
             max-width: 400px;
             width: 100%;
+            box-sizing: border-box;
         }
         
         h1 {
-            color: #ffffff; /* เปลี่ยนสีตัวหนังสือเป็นสีขาวเพื่อให้เด่นชัดขึ้น */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* ใส่เงาหนาขึ้นเล็กน้อยเพื่อให้อ่านง่าย */
+            color: #ffffff; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
             margin-bottom: 15px;
-        }
-        
-        p {
-            color: #f5f5f5; /* สีขาวนวลเพื่อไม่ให้กลืนไปกับพื้นหลัง */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-            font-size: 18px;
-            margin: 8px 0;
-        }
-    </style>
-</head>
-<body>
-    
-    <img src="imges/berserk-guts-berserker-armor-4k-wallpaper-card.jpg" alt="berserk-guts-berserker-armor-4k-wallpaper-card.jpg" alass="profile-img">
-
-    <div class="profile-card">
-        <h1>นายวาสนา โสประโคน</h1>
-        <p>นักเรียนชั้นม.6/6</p>
-        <p>โรงเรียนพานทอง</p>
-    </div>
-
-</body>
-</html>
