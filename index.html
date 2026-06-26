@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-image: url('berserk-guts-berserker-armor-4k-wallpaper-card.jpg');
+            /* ตั้งค่ารูปภาพพื้นหลังให้เต็มหน้าจอพอดี */
+            background-image: url('imgs/isewtweetbg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -16,18 +17,18 @@
             text-align: center;
             padding: 50px;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* เปลี่ยนเป็น column เพื่อให้รูปโปรไฟล์อยู่ด้านบนการ์ด */
             justify-content: center;
             align-items: center;
             min-height: 85vh;
             margin: 0;
         }
         
-    
+        /* ปรับแต่งรูปภาพโปรไฟล์ */
         .profile-img {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
+            border-radius: 50%; /* ทำเป็นวงกลม */
             object-fit: cover;
             margin-bottom: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -35,7 +36,7 @@
         }
         
         .profile-card {
-         
+            /* พื้นหลังการ์ดแบบกระจกโปร่งแสง (Glassmorphism) */
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -53,3 +54,26 @@
             color: #ffffff; 
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
             margin-bottom: 15px;
+            font-size: 28px;
+        }
+        
+        p {
+            color: #f5f5f5; 
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="imges/berserk-guts-berserker-armor-4k-wallpaper-card.jpg" alt="Profile Image" class="profile-img">
+
+    <div class="profile-card">
+        <h1>นายวาสนา โสประโคน</h1>
+        <p>นักเรียนชั้นม.6/6</p>
+        <p>โรงเรียนพานทอง</p>
+    </div>
+
+</body>
+</html>
