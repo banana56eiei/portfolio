@@ -7,33 +7,44 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
+            /* เปลี่ยนพื้นหลังเว็บเป็นแบบไล่เฉดสี สวยงาม ทันสมัย */
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
             text-align: center;
             padding: 50px;
+            /* ช่วยจัดให้การ์ดอยู่ตรงกลางหน้าจอพอดี */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            margin: 0;
         }
         .profile-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            /* เปลี่ยนพื้นหลังการ์ดเป็นสีขาวนวล */
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px; /* ปรับขอบให้มนขึ้นดูนุ่มนวล */
+            /* ปรับเงาให้ดูมีมิติและฟุ้งสวยขึ้น */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             display: inline-block;
             max-width: 400px;
             width: 100%;
         }
         h1 {
-            color: #333;
+            color: #2c3e50; /* เปลี่ยนสีข้อความหัวข้อให้เข้มดูหรูหรา */
+            margin-bottom: 15px;
         }
         p {
-            color: #666;
+            color: #555; /* ปรับสีตัวอักษรให้อ่านง่ายขึ้น */
             font-size: 18px;
+            margin: 8px 0;
         }
     </style>
 </head>
-<body bgcolor="F3F02B" >
+<body>
 
     <div class="profile-card">
         <h1>นายวาสนา โสประโคน</h1>
-        <p>นักเรียนชั้นม.6\6</p>
+        <p>นักเรียนชั้นม.6/6</p>
         <p>โรงเรียนพานทอง</p>
     </div>
 
