@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio นายวาสนา</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            /* เปลี่ยนพื้นหลังเว็บเป็นแบบไล่เฉดสี สวยงาม ทันสมัย */
-            background: linear-gradient(135deg, #e0eafc, #cfdef3);
-            text-align: center;
-            padding: 50px;
-            /* ช่วยจัดให้การ์ดอยู่ตรงกลางหน้าจอพอดี */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
-            margin: 0;
-        }
-        .profile-card {
-            /* เปลี่ยนพื้นหลังการ์ดเป็นสีขาวนวล */
-            background: #ffffff;
-            padding: 40px 30px;
-            border-radius: 15px; /* ปรับขอบให้มนขึ้นดูนุ่มนวล */
-            /* ปรับเงาให้ดูมีมิติและฟุ้งสวยขึ้น */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-            display: inline-block;
-            max-width: 400px;
-            width: 100%;
-        }
-        h1 {
-            color: #2c3e50; /* เปลี่ยนสีข้อความหัวข้อให้เข้มดูหรูหรา */
-            margin-bottom: 15px;
-        }
-        p {
-            color: #555; /* ปรับสีตัวอักษรให้อ่านง่ายขึ้น */
-            font-size: 18px;
-            margin: 8px 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio นายวาสนา</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            /* ใส่รูปภาพพื้นหลังใหม่ และตั้งค่าให้เต็มหน้าจอพอดี */
+            background-image: url('imgs/isewtweetbg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            text-align: center;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh;
+            margin: 0;
+        }
+        
+        .profile-card {
+            /* ปรับพื้นหลังการ์ดเป็นแบบกระจกโปร่งแสง (Glassmorphism) */
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            
+            padding: 40px 30px;
+            border-radius: 15px; 
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #ffffff; /* เปลี่ยนสีตัวหนังสือเป็นสีขาวเพื่อให้เด่นชัดขึ้น */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* ใส่เงาหนาขึ้นเล็กน้อยเพื่อให้อ่านง่าย */
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #f5f5f5; /* สีขาวนวลเพื่อไม่ให้กลืนไปกับพื้นหลัง */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            margin: 8px 0;
+        }
+    </style>
 </head>
 <body>
-  <img src="imgs/isewtweetbg.jpg">
-    <div class="profile-card">
-        <h1>นายวาสนา โสประโคน</h1>
-        <p>นักเรียนชั้นม.6/6</p>
-        <p>โรงเรียนพานทอง</p>
-    </div>
+
+    <div class="profile-card">
+        <h1>นายวาสนา โสประโคน</h1>
+        <p>นักเรียนชั้นม.6/6</p>
+        <p>โรงเรียนพานทอง</p>
+    </div>
 
 </body>
 </html>
-
