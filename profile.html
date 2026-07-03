@@ -1,72 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio ประวัติส่วนตัว</title>
-    <style>
-        /* สไตล์ตกแต่งสไตล์สตรีมเมอร์/เกมเมอร์ (โทนเข้ม-น้ำเงิน) */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .card {
-            background-color: #1e293b;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-            border: 2px solid #3b82f6; /* ขอบสีน้ำเงินที่ชอบ */
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%; /* ทำรูปเป็นวงกลม */
-            border: 4px solid #3b82f6;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #3b82f6;
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
-        .info-p {
-            text-align: left;
-            background-color: #0f172a;
-            padding: 15px;
-            border-radius: 12px;
-            line-height: 1.8;
-        }
-        strong {
-            color: #60a5fa;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio ประวัติส่วนตัว</title>
+
+<style>
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#0f172a;
+    color:#f8fafc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    text-align:center;
+    width:400px;
+    border:2px solid #3b82f6;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(59,130,246,.4);
+}
+
+.profile-img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #3b82f6;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#3b82f6;
+}
+
+.info-p{
+    text-align:left;
+    background:#0f172a;
+    padding:15px;
+    border-radius:12px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+strong{
+    color:#60a5fa;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#3b82f6;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+</style>
+
 </head>
 <body>
 
-    <div class="card">
-        <!-- ลิงก์รูปภาพเดิมของคุณวาสนา -->
-        <img src="images/240_F_1311228699_YoiLc5aJ3RWz3uRfdEtlV0UYSQjqf7RW.jpg" alt="รูปโปรไฟล์ วาสนา" class="profile-img">
-        
-        <h1>ประวัติส่วนตัว</h1>
-        
-        <div class="info-p">
-            <strong>ชื่อ:</strong> วาสนา โสประโคน <br>
-            <strong>การศึกษา:</strong> โรงเรียนพานทอง ชั้น ม.6/6 <br>
-            <strong>อาชีพที่อยากเป็น:</strong> สตรีมเมอร์ 🎮 <br>
-            <strong>ความฝัน:</strong> อยากเป็นคนรวย 💵
-        </div>
+<div class="card">
+
+    <img src="images/240_F_1311228699_YoiLc5aJ3RWz3uRfdEtlV0UYSQjqf7RW.jpg"
+         alt="รูปโปรไฟล์ วาสนา"
+         class="profile-img">
+
+    <h1>ประวัติส่วนตัว</h1>
+
+    <div class="info-p">
+        <strong>ชื่อ:</strong> วาสนา โสประโคน<br>
+        <strong>การศึกษา:</strong> โรงเรียนพานทอง ชั้น ม.6/6<br>
+        <strong>อาชีพที่อยากเป็น:</strong> สตรีมเมอร์ 🎮<br>
+        <strong>ความฝัน:</strong> อยากเป็นคนรวย 💵
     </div>
+
+    <a href="index.html" class="btn">🏠 กลับหน้าหลัก</a>
+
+</div>
 
 </body>
 </html>
