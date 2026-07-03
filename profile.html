@@ -1,17 +1,72 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-<title>Portfolio ประวัติส่วนตัว</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ประวัติส่วนตัว</title>
+    <style>
+        /* สไตล์ตกแต่งสไตล์สตรีมเมอร์/เกมเมอร์ (โทนเข้ม-น้ำเงิน) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            border: 2px solid #3b82f6; /* ขอบสีน้ำเงินที่ชอบ */
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* ทำรูปเป็นวงกลม */
+            border: 4px solid #3b82f6;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #3b82f6;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .info-p {
+            text-align: left;
+            background-color: #0f172a;
+            padding: 15px;
+            border-radius: 12px;
+            line-height: 1.8;
+        }
+        strong {
+            color: #60a5fa;
+        }
+    </style>
 </head>
 <body>
-    <img src="images/28e4428c954459514b112ff915c975b3.jpg" alt="images/28e4428c954459514b112ff915c975b3.jpg" class="profile-img">
-<h1>ประวัติส่วนตัว</h1>
-<p>
-ชื่อ วาสนา โสประโคน
-นักเรียน โรงเรียนพานทอง
-ชั้นม.6/6
-อาชีพ อยากเป็นสตรีมเมอร์
-ความฝัน อยากเป็นคนรวย
-</p>
+
+    <div class="card">
+        <!-- ลิงก์รูปภาพเดิมของคุณวาสนา -->
+        <img src="images/28e4428c954459514b112ff915c975b3.jpg" alt="รูปโปรไฟล์ วาสนา" class="profile-img">
+        
+        <h1>ประวัติส่วนตัว</h1>
+        
+        <div class="info-p">
+            <strong>ชื่อ:</strong> วาสนา โสประโคน <br>
+            <strong>การศึกษา:</strong> โรงเรียนพานทอง ชั้น ม.6/6 <br>
+            <strong>อาชีพที่อยากเป็น:</strong> สตรีมเมอร์ 🎮 <br>
+            <strong>ความฝัน:</strong> อยากเป็นคนรวย 💵
+        </div>
+    </div>
+
 </body>
 </html>
